@@ -278,6 +278,14 @@
             $(this).removeClass("active");
         }
     })
+    
+       window.onload=function () {
+            window.onresize = function () {
+                var w_idth = document.documentElement.clientWidth
+                var iwidth = 320
+                document.documentElement.style.fontSize = (w_idth / iwidth) * 100 + "px";
+            }
+        }
 </script>
 </body>
 </html>
