@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/二手房列表.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-left"></div>
+    <div class="header-right">
+        <div class="my"></div>
+        <div class="xiazai"></div>
+    </div>
+
+</header>
+ <div class="search">
+    <input type="text" placeholder="输入小区名或商业圈开始找房源">
+     <div class="sous"></div>
+ </div>
+<div class="secondList">
+    <!--遮罩层-->
+    <div class="hide"></div>
+
+    <ul class="list">
+        <li>
+            <!--添加active类名就可以改变小箭头的方向和颜色-->
+            <h2><a href="#">区域<span></span></a></h2>
+        </li>
+        <li>
+            <h2><a href="#">价格<span></span></a></h2>
+        </li>
+        <li>
+            <h2><a href="#">房型<span></span></a></h2>
+        </li>
+        <li>
+            <h2><a href="#">更多<span></span></a></h2>
+        </li>
+    </ul>
+    <ul class="someList">
+        <!--区域-->
+        <li class="area">
+            <div class="title">
+                <h2 class="active">区域</h2>
+                <h2>地铁</h2>
+            </div>
+            <div class="hideList">
+                <ul>
+                    <li><a href="#">附近</a></li>
+                    <li><a class="active" href="#">不限</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">不限</a></li>
+                    <li><a href="#">安贞</a></li>
+                    <li><a class="active" href="#">朝阳</a></li>
+                    <li><a href="#">奥林匹克公园</a></li>
+                    <li><a href="#">海淀</a></li>
+                    <li><a href="#">百子湾</a></li>
+                    <li><a href="#">昌平</a></li>
+                    <li><a href="#">北工大</a></li>
+                    <li><a href="#">丰台</a></li>
+                    <li><a href="#">北苑</a></li>
+                    <li><a href="#">石景山</a></li>
+                    <li><a href="#">CBD</a></li>
+                </ul>
+            </div>
+        </li>
+        <!--价格-->
+        <li class="price">
+            <ul>
+                <li><a href="#">不限</a></li>
+                <li><a href="#">100万以下</a></li>
+                <li><a href="#">100万-150万</a></li>
+                <li><a href="#">150万-200万</a></li>
+                <li><a href="#">200万-250万</a></li>
+                <li><a href="#">250万-300万</a></li>
+                <li><a href="#">自定义价格</a></li>
+            </ul>
+        </li>
+        <!--房型-->
+        <li class="house">
+            <ul>
+                <li>不限</li>
+                <li>
+                    1室 <span></span>
+                </li>
+                <li>
+                    2室 <span class="active"></span>
+                </li>
+                <li>
+                    3室 <span></span>
+                </li>
+                <li>
+                    4室 <span></span>
+                </li>
+                <li>
+                    5室 <span></span>
+                </li>
+                <li><a class="btnOK" href="#">确定</a></li>
+            </ul>
+        </li>
+        <!--更多-->
+        <li class="more">
+            <ul>
+                <li>
+                    <h3>区域</h3>
+                    <ul class="childList">
+                        <li>南</li>
+                        <li>南北</li>
+                        <li>东</li>
+                        <li>西</li>
+                        <li>北</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>面积（平方）</h3>
+                    <ul class="childList">
+                        <li>50以下</li>
+                        <li>50-70</li>
+                        <li>70-90</li>
+                        <li>90-110</li>
+                        <li>110-130</li>
+                        <li>130-150</li>
+                        <li>150-200</li>
+                        <li>200以上</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>标签</h3>
+                    <ul class="childList">
+                        <li>学区房</li>
+                        <li>地铁房</li>
+                        <li>不限购</li>
+                        <li>满两年</li>
+                        <li>满五唯一</li>
+                        <li>降价</li>
+                        <li>新上</li>
+                        <li>独家</li>
+                        <li>有钥匙</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>楼龄</h3>
+                    <ul class="childList">
+                        <li>5年以内</li>
+                        <li>10年以内</li>
+                        <li>10-20年</li>
+                        <li>20年以上</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>楼层</h3>
+                    <ul class="childList">
+                        <li>低楼层</li>
+                        <li>中楼层</li>
+                        <li>高楼层</li>
+                    </ul>
+                </li>
+                <li class="clear"><a href="#">清空条件</a></li>
+                <li class="btnOK"><a href="#">确定</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="hxfj">
+
+
+</div>
+
+<div class="b-bottom">
+    <p>北京找房无忧》首页</p>
+    <div style="display: flex ;justify-content: space-around ;margin-top: .1rem">
+        <div style="display: flex" >
+            <div><img src="imgs/apple.png" alt="" style="width: .3rem ;height: .3rem"></div>
+            <div><h5>iphone</h5><h5>客户端</h5></div>
+        </div>
+        <div style="display: flex">
+            <div><img src="imgs/android.png" alt="" style="width: .3rem ;height: .3rem"></div>
+            <div><h5>android</h5><h5>客户端</h5></div>
+        </div>
+    </div>
+    <div style="text-align: center ;margin-top: .2rem">
+        <h6>北京市房地产经纪公司的撒</h6>
+        <h6>网络三安光电撒阿萨大厦2346531大飒飒</h6>
+    </div>
+</div>
+<script src="js/jquery-3.4.1.js"></script>
+<script>
+    $(".sous").on("click",function () {
+        if ($(".search>input").val()!="") {
+
+
+         $.ajax({
+             url:"css/package.json",
+             type:"get",
+             dataType:"json",
+             success:function (data) {
+
+                var a="" ;
+                for(var i=0;i<data.json.houseList.length;i++){
+                    a+="   <div class=\"houseList\">"
+                    a+="    <div class=\"tp\"><img src=\""+data.json.houseList[i].url+"\" alt=\"\"></div>"
+                    a+="   <div class=\"words\">"
+                    a+="  <h5>"+data.json.houseList[i].bt+"</h5>"
+                     a+="<p>"+data.json.houseList[i].fx+"</p>"
+                    a+=" <p>"+data.json.houseList[i].price+"</p>"
+                    a+="     <p>"+data.json.houseList[i].date+" </p>"
+                    a+="  </div>"
+                    a+="    </div>"
+
+                }
+                 $(".hxfj").append(a)
+             }
+
+         })
+        }
+    })
+
+    var $listLi = $('.list li');
+    var $someListLi = $('.someList > li');
+    $listLi.click(function () {
+
+
+
+//        alert(1)
+//        把导航条置于页面最顶端
+            $('.list').css({
+                'position': 'fixed',
+                'top': '0',
+                'left': '0'
+            });
+//        出现透明层蒙板
+            $('.hide').show();
+//        定义当前元素的下标
+            var index = $(this).index();
+//        给导航上的a元素切换上下箭头及字体颜色
+            $listLi.children('h2').children('a').removeClass('active');
+            $(this).children('h2').children('a').addClass('active');
+
+            $someListLi.hide();
+//        因为区域下面使用了flex布局，不能直接用display：none隐藏，所以需要判断
+            if (index === 0) {
+                $someListLi.eq(index).css('display', 'flex');
+            } else {
+                $someListLi.eq(index).show();
+            }
+//        阻止冒泡
+            return false;
+
+
+
+
+    });
+
+
+    $someListLi.on('click', function() { return false; });
+
+    $('body').on('click', function() {
+
+        $('.list').css({
+            'position':''
+        });
+        $('.hide').hide();
+        $listLi.children('h2').children('a').removeClass('active');
+        $someListLi.hide();
+    })
+
+
+
+    $(".house >ul >li>span").on("click",function () {
+         // $(this).addClass("active");
+        console.log($(this).attr("class"))
+        if ($(this).attr("class")===undefined||$(this).attr("class")==""){
+            $(this).addClass("active");
+        }else {
+            $(this).removeClass("active");
+        }
+    })
+</script>
+</body>
+</html>
